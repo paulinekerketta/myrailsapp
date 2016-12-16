@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @dailycash.date %>
+</p>
+
+<p>
+  <strong>Sales:</strong>
+  <%= @dailycash.sales %>
+</p>
+
+<p>
+  <strong>Cashpaid:</strong>
+  <%= @dailycash.cashpaid %>
+</p>
+
+<p>
+  <strong>Onlinepaid:</strong>
+  <%= @dailycash.onlinepaid %>
+</p>
+
+<p>
+  <strong>Driverpaid:</strong>
+  <%= @dailycash.driverpaid %>
+</p>
+
+<p>
+  <strong>Banklodge:</strong>
+  <%= @dailycash.banklodge %>
+</p>
+
+<p>
+  <strong>Overunder:</strong>
+  <%= @dailycash.overunder %>
+</p>
+
+<%= link_to 'Edit', edit_dailycash_path(@dailycash) %> |
+<%= link_to 'Back', dailycashes_path %>

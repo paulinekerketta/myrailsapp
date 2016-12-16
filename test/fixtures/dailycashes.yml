@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-12-15 16:22:25
+  sales: 9.99
+  cashpaid: 9.99
+  onlinepaid: 9.99
+  driverpaid: 9.99
+  banklodge: 9.99
+  overunder: 9.99
+
+two:
+  date: 2016-12-15 16:22:25
+  sales: 9.99
+  cashpaid: 9.99
+  onlinepaid: 9.99
+  driverpaid: 9.99
+  banklodge: 9.99
+  overunder: 9.99

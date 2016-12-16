@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @daydriver.name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @daydriver.phone %>
+</p>
+
+<p>
+  <strong>Noofdelivery:</strong>
+  <%= @daydriver.noofdelivery %>
+</p>
+
+<p>
+  <strong>Chargerate:</strong>
+  <%= @daydriver.chargerate %>
+</p>
+
+<p>
+  <strong>Extrapay:</strong>
+  <%= @daydriver.extrapay %>
+</p>
+
+<p>
+  <strong>Dirvertotal:</strong>
+  <%= @daydriver.dirvertotal %>
+</p>
+
+<%= link_to 'Edit', edit_daydriver_path(@daydriver) %> |
+<%= link_to 'Back', daydrivers_path %>

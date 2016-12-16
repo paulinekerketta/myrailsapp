@@ -1,0 +1,1 @@
+json.partial! "daydrivers/daydriver", daydriver: @daydriver

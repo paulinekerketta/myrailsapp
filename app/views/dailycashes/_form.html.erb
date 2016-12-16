@@ -1,0 +1,67 @@
+<div class="row">
+<%= form_for(dailycash) do |f| %>
+  <% if dailycash.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dailycash.errors.count, "error") %> prohibited this dailycash from being saved:</h2>
+
+      <ul>
+      <% dailycash.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="control-group">
+    <%= f.label :date ,class: 'control-label'%><br>
+    <div class="controls">
+        <%= f.datetime_select :date %>
+  </div>
+</div>
+
+  <div class="field">
+    <%= f.label :sales ,class: 'control-label' %><br>
+    <div class="controls">
+    <%= f.text_field :sales %>
+  </div>
+  </div>
+
+  <div class="field">
+    <%= f.label :cashpaid ,class: 'control-label'%><br>
+    <div class="controls">
+    <%= f.text_field :cashpaid %>
+  </div>
+  </div>
+
+  <div class="field">
+    <%= f.label :onlinepaid ,class: 'control-label'%><br>
+    <div class="controls">
+    <%= f.text_field :onlinepaid %>
+  </div>
+  </div>
+
+  <div class="field">
+    <%= f.label :driverpaid ,class: 'control-label'%><br>
+    <div class="controls">
+    <%= f.text_field :driverpaid %>
+  </div>
+  </div>
+
+  <div class="field">
+    <%= f.label :banklodge ,class: 'control-label'%><br>
+    <div class="controls">
+    <%= f.text_field :banklodge %>
+  </div>
+  </div>
+
+  <div class="field">
+    <%= f.label :overunder ,class: 'control-label'%><br>
+    <div class="controls">
+    <%= f.text_field :overunder %>
+  </div>
+  </div>
+
+ <div class="controls">
+    <%= f.submit %>
+  </div>
+<% end %>

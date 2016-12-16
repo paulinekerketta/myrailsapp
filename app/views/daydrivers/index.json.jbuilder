@@ -1,0 +1,1 @@
+json.array! @daydrivers, partial: 'daydrivers/daydriver', as: :daydriver

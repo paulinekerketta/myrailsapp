@@ -1,0 +1,2 @@
+class Daydriver < ApplicationRecord
+end

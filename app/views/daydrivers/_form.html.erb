@@ -1,0 +1,53 @@
+<div class="row">
+<%= form_for(daydriver) do |f| %>
+  <% if daydriver.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(daydriver.errors.count, "error") %> prohibited this daydriver from being saved:</h2>
+
+      <ul>
+      <% daydriver.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :name ,class: 'control-label'%><br> 
+     <div class="controls">
+    <%= f.text_field :name %>
+  </div>
+<div class="field">
+    <%= f.label :phone ,class: 'control-label'%><br>
+     <div class="controls">
+    <%= f.text_field :phone %>
+  </div>
+
+
+    <%= f.label :noofdelivery ,class: 'control-label'%><br>
+     <div class="controls">
+    <%= f.number_field :noofdelivery %>
+  </div>
+
+  <div class="field">
+    <%= f.label :chargerate ,class: 'control-label'%><br>
+     <div class="controls">
+    <%= f.text_field :chargerate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :extrapay ,class: 'control-label'%><br>
+     <div class="controls">
+    <%= f.text_field :extrapay %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dirvertotal ,class: 'control-label'%><br>
+     <div class="controls">
+    <%= f.text_field :dirvertotal %>
+  </div>
+
+   <div class="controls">
+    <%= f.submit %>
+  </div>
+<% end %>
